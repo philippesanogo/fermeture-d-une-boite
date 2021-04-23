@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>coucou</h1>
+      <div v-if="fenetre" id="conteneur">
+          <div v-on:click="fermer" class="croix">X</div>
+          <h2>Nouvelle technique VueJS</h2>
+          <p>Faire disparaître cette boîte, en cliquant sur la croix au-dessus.</p>
+      </div>
     <script src="vue.min.js"></script>
     <script src="script.js"></script>
   </body>
